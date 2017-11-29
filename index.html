@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplicador</title><!--Aquest és el títol que es veurà a la pestanya del navegador-->
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body> 
+	<script>
+		function multiplicador(){ 
+			document.body.innerHTML = '';
+			document.write("<link rel='stylesheet' type='text/css' href='css/bootstrap.css'/>");
+			document.write("<div id='capçalera'><h1 id='titol'>Multiplicador</h1>");
+			document.write("<hr>")
+			document.write("<p id='text_inicial'>A continuació apareixerà la taula de multiplicar del número que heu introduit</p></div>");
+			document.write("<div><table id='taula' class='table-striped'>");
+			var x;
+            var y;
+            var repetir=true;
+            while(repetir==true){
+               var x=prompt("Introdueix un número de l'1 al 9 per generar la seva taula de multiplicar");
+               var x=parseInt(x);
+               document.write("<h3>Taula de multiplicar del</h3>"+ x);
+               if(x>=1 && x<=9 && x!=NaN){
+                for (var y=1; y <= 10; y++){
+                    document.write("<tr id='tr'>");
+                    document.write("<td id='row'>" + x + "x" + y + "=" + "</td>" + "<td>" + (x*y) + "</td>");
+                    document.write("</tr>");
+                }
+                document.write("</table></div>"); 
+                document.write("<input type='button' class='button1' value='Introduir un altre número' onclick='multiplicador();'>");
+                document.write("<div id='autoria'><p>Victòria Binimelis Vadell <br>Novembre 2017<br>Felanitx</p></div>");
+                repetir=false;
+            }
+            else{
+                alert("Has introduit un valor no vàlid");
+                repetir=confirm("Vols introduir un altre número?");
+            }                
+        }     
+    }
+    multiplicador();   
+</script>  
+</body>
+</html>
