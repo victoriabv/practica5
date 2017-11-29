@@ -6785,41 +6785,4 @@ button.close {
     display: none !important;
   }
 }
-
-#capçalera{
-  background-color: #b3cccc;
-  padding-bottom: 20px;
-  margin-left: 300px;
-  margin-right: 300px;
-  border-radius: 15px;
-}
-#taula {
-  background-color: white;
-  margin-bottom: 20px;
-  padding: 10px; 
-}
-
-#row{
-  height: 30px;
-  width: 110px;
-}
-
-#tr:hover{
-  background-color: #b3b300;
-}
-
-#autoria{
-  background-color: #b3cccc;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding-bottom: 0.5px;
-  padding-top: 0.5px;
-  margin-left: 300px;
-  margin-right: 300px;
-  border-radius: 15px;
-}
-
-h3 {
-  text-align: center;
-}
 /*# sourceMappingURL=bootstrap.css.map */
