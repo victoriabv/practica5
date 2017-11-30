@@ -62,8 +62,6 @@ dfn {
 h1 {
   margin: .67em 0;
   font-size: 2em;
-  text-align:center;
-  padding-top: 50px;
 }
 mark {
   color: #000;
@@ -95,9 +93,7 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  width: 300px;
   height: 0;
-  color: #334d4d;
   -webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
@@ -112,31 +108,17 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-.button1,
+button,
 input,
 optgroup,
 select,
 textarea {
-  background-color: #b3b300; 
-  color: #666600; 
-  border: 3px solid #666600;  
-  width: 245px; 
-  height: 35px;
-  cursor: pointer;
-  border-radius: 10px; 
-  margin-left: 555px;
-  margin-bottom: 20px;
+  margin: 0;
+  font: inherit;
+  color: inherit;
 }
-.button1:hover {
-  background-color: #666600;
-  color: #b3b300;
-  border: 3px solid #666600;
-  width: 245px; 
-  height: 35px;
-  cursor: pointer;
-  border-radius: 10px; 
-  margin-left: 555px;
-  margin-bottom: 20px;
+button {
+  overflow: visible;
 }
 button,
 select {
@@ -199,13 +181,7 @@ optgroup {
 }
 table {
   border-spacing: 0;
-  border-collapse: 20px;
-  position: center;
-  text-align: left;
-  color: #666600;
-  margin: auto;
-  font-size: 20px;
-  border-radius: 15px;
+  border-collapse: collapse;
 }
 td,
 th {
@@ -1107,17 +1083,17 @@ html {
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.42857143;
-  color: #b3b300;
-  background-color: #669999;
+  color: #333;
+  background-color: #fff;
 }
 input,
 button,
 select,
 textarea {
   font-family: inherit;
-  font-size: 20px;
+  font-size: inherit;
   line-height: inherit;
 }
 a {
@@ -1211,7 +1187,6 @@ h6,
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
-  font-size: 70px;
 }
 h1 small,
 h2 small,
@@ -1313,10 +1288,6 @@ h6,
 }
 p {
   margin: 0 0 10px;
-  color: #666600;
-  font-size: 15px;
-  text-align:center;
-  margin-top: 20px;
 }
 .lead {
   margin-bottom: 20px;
@@ -2293,7 +2264,6 @@ th {
   width: 100%;
   max-width: 100%;
   margin-bottom: 20px;
-
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -2323,7 +2293,6 @@ th {
 }
 .table .table {
   background-color: #fff;
-
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
